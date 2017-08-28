@@ -1,0 +1,185 @@
+/***********************************
+GENERAL BODY
+***********************************/
+* {
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  inline-block;
+  padding: 15px;
+  margin: -15px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+
+/***********************************
+FONTS AND COLORS
+***********************************/
+* {
+  font-family: 'Work Sans', sans-serif;
+}
+
+.title {
+  font-family: 'Eczar', serif;
+}
+
+
+
+/***********************************
+HEADER
+***********************************/
+.header-container {
+  padding-bottom: 80px;
+  background: linear-gradient(#EEE, transparent 35%),
+              url('../img/backgroundOcean.jpg');
+  background-repeat: no-repeat;
+  background-size: 1280px;
+  background-position: center top;
+  width: 100%;
+}
+
+.title {
+  font-size: 4em;
+  padding-top: 75px;
+  line-height: 1.2em;
+  padding-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 1.2em;
+  padding: 10px 20px;
+}
+
+nav li {
+  font-size: 1.2em;
+  padding: 15px 35px;
+}
+
+nav {
+  padding-top: 100px;
+}
+
+.nav-flexbox {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+/***********************************
+MAIN
+***********************************/
+main {
+  background: #EEE;
+}
+
+.main-container {
+  margin: 0 auto;
+  width: 85%;
+  padding: 50px 0;
+}
+
+q {
+  display: block;
+  margin: 50px 0;
+  line-height: 2em;
+}
+
+
+
+
+/***********************************
+FOOTER
+***********************************/
+footer {
+  background: #CCC;
+  font-size: .75em;
+  padding: 20px 0;
+}
+
+.footer-flexbox {
+  display: flex;
+  justify-content: center;
+}
+
+footer ul li {
+  padding: 2px 15px;
+}
+
+
+
+/***********************************
+CLEARFIX
+***********************************/
+
+
+
+
+
+/***********************************
+MEDIA QUERIES
+***********************************/
+@media screen and (min-width: 500px) {
+  .header-container {
+    padding-bottom: 80px;
+    background: linear-gradient(#EEE, transparent 60%),
+                url('../img/backgroundOcean.jpg');
+    background-repeat: no-repeat;
+    background-size: 1400px;
+    background-position: center top;
+  }
+
+  nav li {
+    font-size: 1.2em;
+    padding: 15px 65px;
+  }
+
+  footer ul li {
+    padding: 2px 35px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .header-container {
+    padding-bottom: 80px;
+    background: linear-gradient(#EEE, transparent 80%),
+                url('../img/backgroundOcean.jpg');
+    background-repeat: no-repeat;
+    background-size: 1400px;
+    background-position: center top;
+  }
+}
+
+@media screen and (min-width: 925px) {
+  .header-container {
+    padding-bottom: 80px;
+    background: linear-gradient(#EEE, transparent 150%),
+                url('../img/backgroundOcean.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .main-container {
+    width: 60%;
+  }
+
+  .quote-flexbox {
+    display: flex;
+    flex-basis: 150px;
+    justify-content: space-between;
+  }
+
+  .quote-flexbox q {
+    padding: 0 35px;
+  }
+}
