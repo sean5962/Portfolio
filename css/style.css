@@ -20,6 +20,15 @@ ul {
   padding: 0;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
 
 
 /***********************************
@@ -41,7 +50,7 @@ HEADER
 .header-container {
   padding-bottom: 80px;
   background: linear-gradient(#EEE, transparent 35%),
-              url('../img/backgroundOcean.jpg');
+              url('../img/backgroundOceanSmall.jpg');
   background-repeat: no-repeat;
   background-size: 1280px;
   background-position: center top;
@@ -89,7 +98,7 @@ main {
   padding: 50px 0;
 }
 
-q {
+p {
   display: block;
   margin: 50px 0;
   line-height: 2em;
@@ -133,7 +142,7 @@ MEDIA QUERIES
   .header-container {
     padding-bottom: 80px;
     background: linear-gradient(#EEE, transparent 60%),
-                url('../img/backgroundOcean.jpg');
+                url('../img/backgroundOceanSmall.jpg');
     background-repeat: no-repeat;
     background-size: 1400px;
     background-position: center top;
@@ -153,7 +162,7 @@ MEDIA QUERIES
   .header-container {
     padding-bottom: 80px;
     background: linear-gradient(#EEE, transparent 80%),
-                url('../img/backgroundOcean.jpg');
+                url('../img/backgroundOceanSmall.jpg');
     background-repeat: no-repeat;
     background-size: 1400px;
     background-position: center top;
@@ -164,7 +173,7 @@ MEDIA QUERIES
   .header-container {
     padding-bottom: 80px;
     background: linear-gradient(#EEE, transparent 150%),
-                url('../img/backgroundOcean.jpg');
+                url('../img/backgroundOceanSmall.jpg');
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -179,7 +188,7 @@ MEDIA QUERIES
     justify-content: space-between;
   }
 
-  .quote-flexbox q {
+  .quote-flexbox p {
     padding: 0 35px;
   }
 }
